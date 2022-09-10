@@ -1,0 +1,343 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* .second_page_buy{
+  display: none;
+} */
+.hr_art{
+  width: 95%;
+  
+  border: 1px solid rgb(17, 236, 218);
+}
+
+/* Float 2 columns side by side */
+.column {
+  /* margin: 0px 10px; */
+  float: left;
+  width: 50%;
+  height: 350px;
+  padding: 0 10px;
+  margin: 10px 0px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  padding: 0% 6%;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card{
+  width:70%;
+  height: inherit;
+  /* border: 2px solid red; */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.half{
+  float: left;
+  width: 50%;
+  height: inherit;
+}
+
+.img.no_one{
+  background-color: bisque;
+  background-image: url(../images/b_1_a.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+  /* max-width: 50%;
+  max-height: 50%;
+  display: block; */
+  
+}
+
+.card:hover .img.no_one{
+  background-image: url(../images/b_1_b.jpg);
+}
+
+.img.no_two{
+  background-color: bisque;
+  background-image: url(../images/b_2_a.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.card:hover .img.no_two{
+  background-image: url(../images/b-2_b.jpeg);
+}
+
+.img.no_three{
+  background-color: bisque;
+    background-image: url(../images/b_3_a.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  
+  .card:hover .img.no_three{
+    background-image: url(../images/b_3_b.jpeg);
+  }
+  
+  .img.no_four{
+    background-color: bisque;
+    background-image: url(../images/b_4_b.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  
+  .card:hover .img.no_four{
+    background-image: url(../images/b_4_a.jpeg);
+  }
+  
+  .description{
+    text-align: center;
+    /* padding: 5%; */
+  }
+  
+  .add_cart{
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+    width: 40%;
+    background-color: rgb(255, 72, 0);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(255, 174, 0, 0.281), 0 6px 20px 0 rgba(255, 187, 0, 0.425);
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    display: block;
+    text-decoration: none;
+    margin:0 auto;
+    cursor: pointer;
+    top: 25%;
+    /* margin: 1% 20%; */
+    
+  }
+  
+  .add_cart:hover {
+    background-color: red;
+  }
+  
+  .buy_h1{
+    margin-left: 4%;
+    font-weight: lighter;
+    font-size: 40px;
+    /* margin-top: 400px; */
+  }
+  
+  /* /////////////////////////////"more" option of buy page/////////////////////////////// */
+  /* .first_page_buy{
+    display: block;
+  }
+  
+  
+a.round {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a.round:hover {
+  background-color: rgba(0, 0, 0, 0.116);
+}
+
+.previous_buy {
+
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  width: auto;
+  padding: 16px;
+}
+
+.next_buy {
+
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+  padding: 16px;
+}
+
+.round {
+  border-radius: 50%;
+} */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+.part, .part-even{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding: 20px auto; */
+    /* margin-bottom: 30px; */
+
+}
+
+input[type=submit], input[type=reset] {
+    background-color: rgb(248, 55, 29);
+    background-color: rgb(248, 55, 29);
+    box-shadow: 0 4px 8px 0 rgba(255, 174, 0, 0.281), 0 6px 20px 0 rgba(255, 187, 0, 0.425);
+}
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgb(255, 0, 0);
+  }
+
+  input[type=submit], input[type=reset] {
+    color: white;
+}
+
+/* ////////////////////////////slideshow//////////////////////////////////////////// */
+.mySlides {display: none;
+  position: relative;
+}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.116);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+  .mySlides{
+    width: 70%;
+    /* display: inline-block; */
+    margin: 0 auto;
+    z-index: 3;
+  }
+
+  .slide_next, .slide_prev{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+
+
+  }
+
+.slide_next > img, .slide_prev > img{
+  width: 150px;
+  height: 150px;
+
+}
+
+.slide_next{
+  right: 5%;
+  /* margin: auto 0; */
+}
+
+.slide_prev{
+  left: 5%;
+  /* margin: auto 0; */
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */

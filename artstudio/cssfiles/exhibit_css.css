@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+  }
+
+  .hr_art{
+    width: 95%;
+    
+    border: 1px solid rgb(17, 236, 218);
+}
+
+.exhibit_h1{
+    /* margin-top: 100px; */
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+  /* Float 2 columns side by side */
+  .column {
+    /* margin: 0px 10px; */
+    float: left;
+    width: 100%;
+    height: 500px;
+    padding: 0 10px;
+    margin: 10px 0px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+    padding: 0% 6%;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card{
+      width:100%;
+      height: inherit;
+      /* border: 2px solid red; */
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+      background-color: white;
+  }
+
+  .img{
+      width: 100%;
+      height: 70%;
+  }
+
+  .description{
+      padding: 10px;
+  }
+
+  .img.no_one{
+    background-color: bisque;
+    background-image: url(../images/e_2_a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_one:hover{
+    background-image: url(../images/e_2_b.jpg);
+}
+
+.img.no_two{
+    background-color: bisque;
+    background-image: url(../images/e_1_a.jpe);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_two:hover{
+    background-image: url(../images/e_1_b.jpe);
+}
+
+.img.no_three{
+    background-color: bisque;
+    background-image: url(../images/e_3_a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_three:hover{
+    background-image: url(../images/e_3_b.jpg);
+}
+
+.img.no_four{
+    background-color: bisque;
+    background-image: url(../images/art-galleries.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_four:hover{
+    background-image: url(../images/art-gallery-2.jpeg);
+}
+
+/* //////////////////////////////////////// */
+.img.no_g_one{
+    background-color: bisque;
+    background-image: url(../images/g_1_a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_g_one:hover{
+    background-image: url(../images/g_1_b.jpg);
+}
+
+.img.no_g_two{
+    background-color: bisque;
+    background-image: url(../images/g_2_a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_g_two:hover{
+    background-image: url(../images/g_2_b.jpg);
+}
+
+.img.no_g_three{
+    background-color: bisque;
+    background-image: url(../images/g_3_a.jpe);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_g_three:hover{
+    background-image: url(../images/g_3_b.jpe);
+}
+
+.img.no_g_four{
+    background-color: bisque;
+    background-image: url(../images/g_4_a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.img.no_g_four:hover{
+    background-image: url(../images/g_4_b.jpe);
+}

@@ -1,0 +1,722 @@
+/*styling navbar*/
+ul.iam {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+    /* padding: 2px 0; */
+    
+    /* position: -webkit-sticky; 
+    position: sticky;
+    top: 0; */
+  }
+
+  div.navibar_div{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  li.pika {
+    float: left;
+  }
+  
+  li.pika a.navi, .dropbtn {
+    display:inline-block;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  li.pika a.navi:hover, .dropdown:hover .dropbtn  {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(248, 174, 174);
+    box-sizing: border-box;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  .dropdown-content a, #myDIV a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .dropdown-content a:hover, #aama a:hover {
+    /* background-color: #ff7e7e; */
+    background-color: #928f8f;
+    color: rgb(255, 255, 255);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+  /* .active {
+    background-color: #fa6603;
+  } */
+
+  div.img_with_text {
+      z-index: -1;
+
+  }
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////// Styling the form///////////////////////////////////////////////////// */
+
+.form-body {
+
+  background-image: url("../images/red-background.jpg"); 
+}
+div.container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.form-heading {
+  background-color: rgb(248, 226, 29);
+  background-color: rgb(255, 234, 42);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 12px;
+  padding : 15px;
+  border-radius: 8px;
+}
+
+div.form-section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 12px;
+  background-color: rgb(255, 255, 255);
+  padding : 15px;
+  border-radius: 8px;
+}
+
+div.form-section:focus-within {
+  /* border-left: 5px solid rgb(0, 4, 255); */
+  border-left: 5px solid rgb(255, 230, 0);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border:none;
+  border: 2px solid rgb(255, 188, 44);
+}
+
+select {
+  width: 45%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fdfdcf;
+  margin-left: 10px;
+}
+
+/* The radio label */
+.label-rad {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.label-rad input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fafab8;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.label-rad:hover input ~ .checkmark {
+  background-color: rgb(253, 228, 0);
+}
+
+/* When the radio button is checked, add a blue background */
+.label-rad input:checked ~ .checkmark {
+  background-color: #fd0000;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.label-rad input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.label-rad .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* The label-ch */
+.label-ch {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.label-ch input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkname {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fafab8;
+}
+
+/* On mouse-over, add a grey background color */
+.label-ch:hover input ~ .checkname {
+  background-color: rgb(253, 228, 0);
+}
+
+/* When the checkbox is checked, add a blue background */
+.label-ch input:checked ~ .checkname {
+  background-color: #fd0000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkname:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.label-ch input:checked ~ .checkname:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.label-ch .checkname:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#psw, #psw-repeat{
+  width: 25%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fdfdcf;
+  margin-left: 10px;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: rgb(248, 226, 29);
+  background-color: rgb(255, 234, 42);
+
+  /* background-color: rgb(255, 251, 0); */
+  border: none;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.set-reset{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 2%;
+  position: relative;
+}
+input[type=reset], .signin{
+  position: absolute;
+  right:0px;
+}
+.signin{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: rgb(255, 251, 0);
+}
+
+/*//////////////////Styling webpage body/////////////////////////////////////*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+
+.part {
+    /* background-color: rgb(255, 204, 38); */
+    background-color: rgb(255, 217, 0);
+    width:100%;
+}
+
+.part-even {
+    width:100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.first {
+    width:100%;
+    height: 590px;
+    position:relative;
+}
+
+.inner-block {
+    width:80%;
+    left: 10%;
+    top: 90px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+    position: absolute;
+}
+
+.pic-block {
+    width: 360px ;
+    height: 405px;
+    background: url(../images/pranesh.jpeg)
+      no-repeat center / cover;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.253);
+      left: 20%;
+      top: 40px;
+    position:absolute;
+    z-index: 2;
+}
+
+.outerline {
+    border: 5px solid rgb(255, 0, 0);
+    left: 18%;
+    width: 360px ;
+    height: 405px;
+    top: 60px;
+    position: absolute;  
+    z-index: 1; 
+}
+
+/* .outerline p {
+    left:20%;
+    top: 363px;
+    position:absolute;
+}
+
+#desig {
+    left:20%;
+    top: 378px;
+    position:absolute;
+} */
+
+.inner-block > .content-block {
+    width:40%;
+    float: right;
+    padding:10px;
+    margin-right: 60px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.inner-block > .content-block > h1 {
+    font-weight: lighter;
+    font-size: 55px;
+}
+.inner-block > .content-block > strong {
+    font-weight:bold;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    padding-top:70px;
+    box-sizing: border-box;
+  }
+  
+  /* Clear floats after the columns */
+  .squir:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column > h1 {
+      font-size: 70px;
+      text-align: right;
+      line-height: 27px;
+      font-weight: lighter;
+  }
+  .column > p {
+      font-weight: bold;
+  }
+  .column.right {
+      padding-right: 150px;
+      padding-top: 90px;
+  }
+
+  .column.right > .learn, .choices {
+    width: 40%;
+    box-sizing: border-box;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin:0 auto;
+    cursor: pointer;
+  }
+
+  .char{
+      height: 800px;
+      position: relative;
+  }
+
+  .char > .block1 {
+      background: url(../images/art-gallery3.jpeg) no-repeat center / cover;
+      left:10%;
+      top: 90px;
+      width:540px;
+      height:279px;
+      position: absolute;
+      z-index: 4;
+  }
+  .char > .block2 {
+    background: url(../images/art-studio2.jpeg) no-repeat center / cover;
+    left:35%;
+    top:260px;
+    width:390px;
+    height:472px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.329);
+    position: absolute;
+    z-index: 5;
+}
+.char > .block3 {
+    right:10%;
+    left:60%;
+    top:120px;
+    padding: 25px;
+    /* font-size: 20px;
+    line-height: 50px; */
+    text-align: left;
+    background-color: white;
+    position: absolute;
+    z-index: 6;
+}
+.block3 > ul {
+    list-style:disc;
+    list-style-position: outside;
+  }
+.block3 > h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.block3 > li{
+    font-weight: lighter;
+}
+.block3 > ul{
+    line-height: 40px;
+}
+.block3 > .view {
+    width: 60%;
+    box-sizing: border-box;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin:0 auto;
+    cursor: pointer;
+  }
+
+.third{
+    height:500px;
+}
+.third > .port{
+    float: left;
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 2%;
+    box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.third:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.third > .image{
+    background: url(../images/painting.jpg) no-repeat center / cover;
+    height: 500px;
+}
+
+.port h1{
+  font-weight: lighter;
+  font-size: 70px;
+}
+.port > ul{
+  font-weight: lighter;
+  font-size: 20px;
+}
+.port > ul{
+  line-height: 40px;
+}
+.bulb{
+  height:1000px;
+}
+.hh{
+  text-align: center;
+}
+.hh h1{
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+/* Create three equal columns that floats next to each other */
+.col-image {
+  float: left;
+  width: 33.33%;
+  height: 240px;
+  margin: 15px;
+  margin-left: 10%;
+}
+
+/* Clear floats after the columns */
+.bulb.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.rows .a{
+  background: url(../images/art-galleries.jpeg) no-repeat center / cover;
+}
+.rows .b{
+  background: url(../images/art-gallery-2.jpeg) no-repeat center / cover;
+}
+.rows .c{
+  background: url(../images/art-gallery3.jpeg) no-repeat center / cover;
+}
+.rows .d{
+  background: url(../images/Art-studio.jpeg) no-repeat center / cover;
+}
+.rows .e{
+  background: url(../images/art-studio2.jpeg) no-repeat center / cover;
+}
+.rows .f{
+  background: url(../images/art-gallery-2.jpeg) no-repeat center / cover;
+}
+.col-image:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+.fourth{
+  background: url(../images/paint.jpg) no-repeat center / cover;
+  float: right;
+}
+.right-para{
+  width: 50%;
+  box-sizing: border-box;
+}
+.cards{
+  float: left;
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  /* /* background-color: rgb(255, 217, 0);  */
+}
+
+/* Clear floats after the columns */
+.right-para:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+.close {
+  position: absolute;
+  margin-right: 10px;
+  right: 0px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.70;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.arrtable{
+  width: 20%;
+  margin-left: 40%;
+}
+
+.clicks {
+  padding: 10%;
+}
+
+.choices{
+  width: 300px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+#clock {
+  background-color: white;
+  width: 100px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 2px;
+  text-align: center;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#myDIV {
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  /* top: 118px; */
+  top: 0px;
+  color: white;
+  width: 0;
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.95);
+  /* margin-top: 20px; */
+  z-index: 2000;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#aama {
+  list-style: none;
+}
+
+.poi , #myDIV p{
+  cursor: pointer;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+.close {
+  position: absolute;
+  right: 0px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.70;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
